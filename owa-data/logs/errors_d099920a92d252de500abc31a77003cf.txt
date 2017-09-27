@@ -1,0 +1,41 @@
+11:19:27 09/19/17 23154 [notice] Starting installation of module: base
+11:19:27 09/19/17 23154 [notice] owa_request Table Created.
+11:19:27 09/19/17 23154 [notice] owa_session Table Created.
+11:19:27 09/19/17 23154 [notice] owa_document Table Created.
+11:19:27 09/19/17 23154 [notice] owa_feed_request Table Created.
+11:19:27 09/19/17 23154 [notice] owa_click Table Created.
+11:19:27 09/19/17 23154 [notice] owa_ua Table Created.
+11:19:27 09/19/17 23154 [notice] owa_referer Table Created.
+11:19:27 09/19/17 23154 [notice] owa_site Table Created.
+11:19:27 09/19/17 23154 [notice] owa_visitor Table Created.
+11:19:27 09/19/17 23154 [notice] owa_host Table Created.
+11:19:27 09/19/17 23154 [notice] owa_exit Table Created.
+11:19:27 09/19/17 23154 [notice] owa_os Table Created.
+11:19:27 09/19/17 23154 [notice] owa_impression Table Created.
+11:19:27 09/19/17 23154 [notice] owa_configuration Table Created.
+11:19:27 09/19/17 23154 [notice] owa_user Table Created.
+11:19:27 09/19/17 23154 [notice] owa_domstream Table Created.
+11:19:27 09/19/17 23154 [notice] owa_action_fact Table Created.
+11:19:27 09/19/17 23154 [notice] owa_search_term_dim Table Created.
+11:19:27 09/19/17 23154 [notice] owa_ad_dim Table Created.
+11:19:27 09/19/17 23154 [notice] owa_source_dim Table Created.
+11:19:27 09/19/17 23154 [notice] owa_campaign_dim Table Created.
+11:19:27 09/19/17 23154 [notice] owa_location_dim Table Created.
+11:19:27 09/19/17 23154 [notice] owa_commerce_transaction_fact Table Created.
+11:19:27 09/19/17 23154 [notice] owa_commerce_line_item_fact Table Created.
+11:19:27 09/19/17 23154 [notice] owa_queue_item Table Created.
+11:19:27 09/19/17 23154 [notice] owa_site_user Table Created.
+11:19:27 09/19/17 23154 [notice] Post install proceadure was a success.
+11:19:27 09/19/17 23154 [notice] Module base activated
+11:19:27 09/19/17 23154 [notice] Installation complete.
+11:19:27 09/19/17 23154 [notice] Checking for existence of default site.
+11:19:27 09/19/17 23154 [notice] Created default site.
+11:19:27 09/19/17 23154 [notice] Install Complete Flag added to configuration
+11:19:38 09/19/17 9665 [] No value passed. // #0 /var/www/html/owa/modules/base/sitesInvocation.php(47): owa_entity->getByColumn('site_id', NULL)
+#1 /var/www/html/owa/owa_controller.php(218): owa_sitesInvocationController->action()
+#2 /var/www/html/owa/owa_coreAPI.php(788): owa_controller->doAction()
+#3 /var/www/html/owa/owa_coreAPI.php(1211): owa_coreAPI::performAction('base.sitesInvoc...', Array)
+#4 /var/www/html/owa/owa_caller.php(232): owa_coreAPI::handleRequest(NULL, '')
+#5 /var/www/html/owa/owa_caller.php(162): owa_caller->handleRequest()
+#6 /var/www/html/owa/index.php(46): owa_caller->handleRequestFromUrl()
+#7 {main}
